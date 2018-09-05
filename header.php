@@ -37,13 +37,25 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
-			$bordeaux_description = get_bloginfo( 'description', 'display' );
-			if ( $bordeaux_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $bordeaux_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
 
+				?>
+
+
+		</div><!-- .site-branding -->
+		<div class="plan">
+			<ul>
+				<li><a href="#">Quartier</a></li>
+				<li><a href="#">Plan</a></li>
+			</ul>
+		</div>
+		<div class="recherche">
+			<ul>
+				<li><a href="#">Aller au contenu</a></li>
+				<li><a href="#">Accessibilité</a></li>
+				<li><a href="#">Plan du Site</a></li>
+			</ul>
+			<input type="search" name="" value="">
+		</div>
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bordeaux' ); ?></button>
 			<?php
