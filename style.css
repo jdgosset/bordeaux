@@ -76,8 +76,9 @@ body {
  */
 
 h1 {
-	font-size: 2em;
+	font-size: 3em;
 	margin: 0.67em 0;
+	color:red;
 }
 
 /* Grouping content
@@ -819,7 +820,10 @@ a:hover, a:active {
 .site-footer:after {
 	clear: both;
 }
-
+header {
+	width: 50%;
+	margin:auto;
+}
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
